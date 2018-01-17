@@ -1,0 +1,28 @@
+  @charset "UTF-8";
+  @import url("/public/cache/ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css");
+  @import url("/public/cache/ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.1/css/jquery.dataTables.css");
+  #myAjaxBusy {
+    left:49%;
+    position:absolute;
+    top:49%;
+    z-index:999;}
+  #myOverlay {
+    background-color:#fff;
+    height:100%;
+    position:absolute;
+    width:100%;
+    z-index:99;}
+  .myTab {
+    width:1024px;}
+  textarea.textIo {
+    background-color:#eef;
+    white-space:;}
+  #textFile {
+    background-color:#eef;}
+  .textIo {
+    border-spacing:0px !important;
+    font-family:courier !important;
+    line-height:0.9375em !important;}
+  .width100 {
+    width:100%;
+}

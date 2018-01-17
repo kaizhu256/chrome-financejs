@@ -1,0 +1,65 @@
+<html><head onclick="/*jslint bitwise: true, browser: true, continue: true, es5: true, maxerr: 8, node: true, nomen: true, regexp: true, stupid: true, sub: true, white: true */ /*global $, atob: true, Buffer, btoa: true, chrome, Float64Array: true, jQuery, YUI */"><link href="/public/financejs/client.css" rel= "stylesheet" type="text/css"/></head><body>
+<div id="myOverlay"></div>
+<img id="myAjaxBusy" src="/public/cache/ajaxBusy.gif">
+<div id="myTabs">
+<ul>
+  <li><a href="#tabFnn">finance</a></li>
+  <li><a href="#tabEval">eval</a></li></ul>
+<div class="myTab" id="tabEval">
+  <div>
+    canvas</div>
+  <div>
+    <canvas height="256" id="cnvOut" width="512" style="border:1px solid #000;"></canvas></div>
+  <div>
+    <input id="btnExec" type="button" value="exec"/>
+    <input id="btnBraket" type="button" value="braket"/>
+    <input id="btnJslint" type="button" value="jslint"/>
+    <input id="textFile" type="file"/></div>
+  <div>
+    text stdin</div>
+  <div>
+    <textarea class="textIo" id="textStdin" style="height:16em; width:32em;"></textarea></div>
+  <div>
+    text stdout</div>
+  <div>
+    <textarea class="textIo" id="textStdout" style="height:16em; width:32em;"></textarea></div></div>
+<div class="myTab" id='tabFnn'>
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          model</td>
+        <td>
+          stocks</td>
+        <td>
+          start</td>
+        <td>
+          end</td></tr>
+      <tr>
+        <td>
+          <select>
+            <option value="1">
+              none</option>
+            <option value="2" selected>
+              linear</option>
+            <option value="3">
+              quadratic</option></select></td>
+        <td>
+          <input autocomplete="on" type="text"/></td>
+        <td>
+          <input class="textDate" type="text"/></td>
+        <td>
+          <input class="textDate" type="text"/></td></tr></tbody></table>
+  <div>
+    <canvas height="256" width="512" style="border:1px solid #000;"></canvas></div>
+  <div>
+    <table class="dataTable" id="fnnData"></table></div></div>
+</div>
+<script src="/public/cache/ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="/public/cache/ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+<script src="/public/cache/ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.1/jquery.dataTables.min.js"></script>
+<script src="/public/financejs/core.js"></script>
+<script src="/public/financejs/extra.js"></script>
+<script src="/public/cache/financejs/jslint.js"></script>
+<script src="/public/financejs/client.js"></script>
+</body></html>
